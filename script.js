@@ -19,14 +19,14 @@ function search(e) {
     .then((data) => {
         let pokeMoves = data["moves"];
         //pokeMoves[0]["move"]["name"] => to get the first move
-        let pokeValues = Object.values(pokeMoves);
 
         let allMoves = [];
+
         for (const move in pokeMoves) {
-            allMoves.push(`<p>${pokeMoves[move]["move"]["name"]}</p>`);
+            allMoves.push(`${pokeMoves[move]["move"]["name"]}`);
         }
         pokeImage.innerHTML = `<img src= "https://img.pokemondb.net/artwork/large/${pokemonName}.jpg">`;
-        resultsMoves.innerHTML = `<p> Check below the moves: ${allMoves.join(" ")}. </p>`;
+        resultsMoves.innerHTML = `Check below the moves: ${allMoves.join(", ")}. `;
         console.log(typeof Object.values(pokeValues));
     })
     .catch((error) => {
