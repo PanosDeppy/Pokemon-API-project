@@ -68,12 +68,12 @@ transition: transform 0.5s;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   border-radius: 4px;
   padding: 3px;
   text-align: left;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -82,12 +82,12 @@ p {
   font-family: 'Pokemon Solid', sans-serif;
 }
 
-/* footer {
-  
-} */
+footer p {
+  display: flex;
+  justify-content: center;
+}
 
-/* #moves-list {
+#moves-list {
   display: grid;
   grid-template-columns: repeat(6, 250px);
- 
-} */
+}
