@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
     <title>Pokemon API</title>
   </head>
   <body>
     <h1>Find your Pokemon</h1>
     <div>
       <form action="#" id="wrapper">
-        <h2>Pokemon moves</h2>
+        <h2>Pokemon App</h2>
         <label for="userInput"></label>
         <input type="text" placeholder="Type your Pokemon" id="userInput"/>
-        <button id="myButton">search</button>
-        <div id="results"></div>
-        <div id="pokemonImage"></div>
+        <button id="myButton">Search</button>
+        
+        <div class="container">
+            <img id="pokemon-image" src=""  class="image" style="width: 400px; height: 400px;">
+            <div id="results" class="results"></div>
+        </div>
       </form>
     </div>
     <br/>
+
+    <footer>
+      <p>Data from <a href="https://pokeapi.co/" target="_blank">PokeAPI</a></p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
-  <footer>
-    <p>Images from "https://pokemondb.net/".</p>
-  </footer>
 </html>
